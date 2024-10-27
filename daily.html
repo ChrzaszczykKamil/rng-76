@@ -8845,7 +8845,7 @@
 
             function scoreSpookyCandyBowl(offset, count) {
                 return {
-                        name: times("&#x1F383; HALLOWEEN: Build Spooky Candy Bowl and<br>&nbsp;&nbsp;give out candy from your C.A.M.P.", count),
+                        name: times("&#x1F383; HALLOWEEN: Build Spooky Candy Bowl and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;give out candy from your C.A.M.P.", count),
                         offset: offset,
                         period: 1400,
                     };
@@ -26902,7 +26902,7 @@
             communityEventsAppend.push(createGoldRush2(ofDate(2024, 9, 17, 16), ofDate(2024, 9, 21, 16)));
 
             communityEventsAppend.push(createMinerva(ofDate(2024, 9, 21, 16), ofDate(2024, 9, 23, 16), "Emporium @ Foundation", "P?"));
-            communityEventsAppend.push(createSpookyScorched2024(ofDate(2024, 9, 22, 16), ofDate(2024, 10, 5, 16)));
+            communityEventsAppend.push(createSpookyScorched2024(ofDate(2024, 9, 22, 16), ofDate(2024, 10, 5, 17)));
 
             addWeeklies(challengesWeeklyEra21, 49, [
                 scoreFixedGainXP10000Rank100, 1,
@@ -26992,6 +26992,20 @@
                     make1st(scoreCollectToiletPaper), 2,
                     scoreReroll, 1,
                 ], dops(dailyOpsWestTec, dailyOpsCultists, dailyOpsSwift, false, false, false));
+            addDaily(challengesDailyEra21, 54, [
+                    scoreCompleteDailyChallenge, 6,
+                    scoreCollectMicroscopeBiometric, 2,
+                    scoreCompleteDailyOps, 1,
+                    scoreCrippleHumanHeads, 2,
+                    scoreKillGlowing, 1,
+                    scoreScrapJunkRubber, 5,
+                    scoreSellSwampTofu, 1,
+                    scoreSpookyCandyBowl, 1,
+                    scoreTrickOrTreat, 5,
+                    scoreKillSpookyScorched, 5,
+                    make1st(scoreScrapJunkAluminium), 5,
+                    scoreReroll, 1,
+                ], dops(dailyOpsWatoga, dailyOpsEagles, dailyOpsRegenerating, true, false, false));
 
 
             communityEventsAppend.push(createTripleScore(ofDate(2024, 9, 23, 16), ofDate(2024, 9, 24, 16)));
