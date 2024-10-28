@@ -258,9 +258,654 @@
                     bethesda: "https://bethesda.net/en/article/ctCMgSVtdJ6TIbgoPDFYh/fallout-76-update-notes-october-22-2024",
                     notes: [
                         {
-                            category: "Other",
-                            name: "TBD",
-                            description: "In a week, hopefully"
+                            category: "Bugfix,Items",
+                            name: "Power Armor",
+                            description: "Power Armor HUD compass will now properly display icons."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Skins",
+                            description: "Fixed an issue where various combinations of Torso and Jetpack skins would cause selections to change upon entering the Power Armor."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Secret Service Armor",
+                            description: "Secret Service Armor gives scrap when scrapping it."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Mining Helmet",
+                            description: "Fixed an issue where having multiple Mining Helmets could cause the lamp to not function."
+                        },
+                        {
+                            category: "UI",
+                            name: "Best Builds",
+                            description: "Submission window has been updated to include an icon for the Featured Photo."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Pheasant Plushie",
+                            description: "Pheasant Plushie workbench preview now faces the correct direction."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Plan: Herdsman's Bell - Basic",
+                            description: "All players in possession of \"Plan: Herdsman's Bell - Basic\" can now craft the Bell at the Tinker's Workbench."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Blue Ridge Pit Stop Guard Post",
+                            description: "Fixed an issue where some variants of the Blue Ridge Pit Stop Guard Post would float when placed."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Destroyed Farm Wagon",
+                            description: "Fixed an issue where the Destroyed Farm Wagon would replay VFX upon fast traveling back to C.A.M.P."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Pioneer Scouts Recruiting Poster",
+                            description: "Fixed an issue where the Pioneer Scouts Recruiting Poster was not displaying properly."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Red Nuka Cola Chime",
+                            description: "Red Nuka Cola chimes will now correctly play audio."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Watchpost",
+                            description: "Removed a non-functional power connector from the Watchpost C.A.M.P. structure."
+                        },
+                        {
+                            category: "Bugfix,C.A.M.P.",
+                            name: "Jumpy Juice Company Tea Machine",
+                            description: "The Jumpy Juice Company Tea Machine now properly states it generates Tea."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Workshop",
+                            description: "Adjusted the preview icon of the Atomic Roller Machine to be less zoomed out."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Workshop",
+                            description: "Fixed an issue where objects could clip into the Performance Stage Metal and Performance Stage Wood structures."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Workshop",
+                            description: "Fixed an issue where the Vault-Tec Fusion Core Recharger did not display properly after being broken and repaired."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Workshop",
+                            description: "Removed \"Triumph Terrace\" from the Track House's name."
+                        },
+                        {
+                            category: "Balance",
+                            name: "Workshop",
+                            description: "Small Flatbed crafting resources have been adjusted to 1 Concrete, 2 Steel, and 3 Wood."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Workshop",
+                            description: "Triumph Terrace Screen Door now has SFX."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Workshop",
+                            description: "Straw Goat is now properly craftable for players who learned the recipe previously."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Caravans",
+                            description: "Fixed several areas where the Brahmin could become stuck, preventing progress."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Caravans",
+                            description: "Fixed an issue where hurrying the brahmin could hurry all active Caravan Brahmin."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Caravans",
+                            description: "Fixed an issue where additional Yao Guai would spawn after the \"Defeat the Yao Guai\" objective."
+                        },
+                        {
+                            category: "Bugfix,Exploit",
+                            name: "Caravans",
+                            description: "Fixed an issue that would allow players to get full Supplies from another player's caravan."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Caravans",
+                            description: "Joined Caravans will now appear in the \"Events\" tab of the pip-boy."
+                        },
+                        {
+                            category: "Bugfix,Challenge",
+                            name: "Caravans",
+                            description: "Completing a Caravan will now properly count towards the \"Complete an Event while in a Group\" challenge."
+                        },
+                        {
+                            category: "Balance",
+                            name: "Caravans",
+                            description: "Supply payout for helping caravans have been increased:<br><ul>"
+                                + "<li>Helping Small Caravans: 4 Supplies, 3 Scrip, Stimpaks, Contextual Ammo (increased amounts).</li>"
+                                + "<li>Helping Medium Caravans: 12 Supplies, 4 Scrip, Stimpaks, Contextual Ammo (increased amounts).</li>"
+                                + "<li>Helping Large Caravans: 20 Supplies, 5 Scrip, Stimpaks, Contextual Ammo (increased amounts).</li>"
+                                + "<li>Failing a Caravan will give you 3 supplies instead of 1 now.</li>"
+                                + "</ul>"
+                        },
+                        {
+                            category: "Bugfix,Combat,Perks",
+                            name: "Perks in Combat",
+                            description: "Basher, Modern Renegade and Twisted Muscles Now they should reference the proper perk."
+                        },
+                        {
+                            category: "Bugfix,Combat,Perks",
+                            name: "Enforcer",
+                            description: "Enforcer Rank 1 now can cripple Enemies."
+                        },
+                        {
+                            category: "Bugfix,Combat",
+                            name: "AP regen",
+                            description: "Fixed a case where AP would not regenerate while taking RAD damage."
+                        },
+                        {
+                            category: "Bugfix,Combat,Perks",
+                            name: "Tenderizer",
+                            description: "Addressed an issue where the Tenderizer perk could result in more damage than intended."
+                        },
+                        {
+                            category: "Bugfix,Combat,Items",
+                            name: "Legendary Esplosion Mod",
+                            description: "The legendary explosion mod now applies bonus to explosive attacks."
+                        },
+                        {
+                            category: "Balance,Combat",
+                            name: "Toxic Blood mutated enemies",
+                            description: "Adjusted the damage caused by the poison cloud from Toxic Blood mutated enemies. Dev Note: Players should expect the poison cloud to be weaker at lower levels and the poison effect drops off faster."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Lesser Devil",
+                            description: "Increased damage for Lesser Devils."
+                        },
+                        {
+                            category: "Combat,Balance,Daily Ops",
+                            name: "Alien Invader",
+                            description: "Reduced Health, Reduced Damage in Daily Ops"
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Floater Freezer",
+                            description: "Slightly lowered the duration of the slow effect on the Floater Freezer's freezing breath."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Floater Freezer",
+                            description: "Slightly reduced the rate at which the slow effect accumulates for the Floater Freezer's freezing breath."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Floater Freezer",
+                            description: "Reduced damage for the Floater Freezer's freezing breath."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Floater Flamer",
+                            description: "Reduced damage for the Floater Flamer's fire breath."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Floater Freezer",
+                            description: "Reduced the cryo damage for the Floater Freezer's blast/stare/shockwave attack (the one which also deals fusion core damage)."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Floater Gnasher",
+                            description: "Reduced damage for the Floater Gnasher's bite attack."
+                        },
+                        {
+                            category: "Combat,Balance,Items",
+                            name: "Beta/Gamma laser mods",
+                            description: "Adjusted the damage for the following Beta/Gamma laser mods: Laser Gun, Ultracite Laser Gun, Gatling Laser, Ultracite Gatling Laser, Plasma Gun"
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Other notes",
+                            description: "While these weapons are still being evaluated for overall balance, these particular mods over-shot the current target for fire damage mods (especially when taking into account the recent adjustments to creature health and resistances) and are being brought in line with similar mods for other weapons. This allows for more consistency among weapons and mods when making future changes."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Creatures",
+                            description: "The creatures below will generally be less threatening at mid-level (especially 35-75) but should be a bit tougher towards level 100. In some cases, at lower level, these creatures may be slightly weaker or stronger to ensure that they’re appropriately engaging even when first met."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Creatures",
+                            description: "Their resistances have been adjusted in a way that it’s now more valuable to explore which damage types they are now weaker too. These changes are similar to the creature changes that were made in the Skyline Valley and Milepost Zero updates."
+                        },
+                        {
+                            category: "Combat,Balance",
+                            name: "Creatures",
+                            description: "The following creatures have been adjusted: Hellcat Mercenaries, Rad Scorpions, Overgrown Thorn, Overgrown Pollinator, Overgrown Elder, Overgrown Elderwood, Mr. Handy/Gusty, Settlers, Mothman, Union NPCs, Mobsters, Showmen, and Auditors, Blue Devil, Jersey Devil, Lesser Devils, Fanatics, Fanatic Foreman, Fanatic Harrower, Fanatic Elite Harrower, Fanatic Conqueror, Lieutenant Kappa, General Zeta, Captain Alpha/Captain Omega, Alien Drone, Alien Detonator Drone, Alien Elite Drone, Sentry Bot, Glowing Ones, Feral Ghouls, Bloodbugs,Grafton Monsters, Ogua, Wendigo Colossus, Critters, Rad Roach, Flatwoods Monster, Rad Rats, Mirelurks, Mirelurk Queen, Mirelurk Hunter, Trog Superior, Trog Devourer, Trog Fledgling, Glowing Trog, Assaultron, Radtoad, Radstag, Sheepsquatch"
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "Powerhouse of the Cell",
+                            description: "Addressed several issues where players could become stuck between objectives and unable to continue."
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "Powerhouse of the Cell",
+                            description: "Addressed several issues where players could become stuck between objectives and unable to continue."
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "Project Paradise",
+                            description: "Teammates fast traveling to a team leader who is participating in this event will no longer spawn stuck inside the central reactor."
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "Lode Baring",
+                            description: "Fixed an issue where players could be blocked from entering the mine by an uncleared rock pile located just inside the interior entrance."
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "Out of the Blue",
+                            description: "Fixed an issue where obtaining the caravan camp notes before starting the quest could break progression."
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "Test Your Metal",
+                            description: "Potential reward \"Rust Eagle Banner\" is now properly displayed as \"Plan: Rust Eagle Banner\"."
+                        },
+                        {
+                            category: "Bugfix,Event",
+                            name: "The Elusive Crane",
+                            description: "Fixed a blocking issue where Sol would not execute Crane when prompted."
+                        },
+                        {
+                            category: "Bugfix,Event,Challenge",
+                            name: "Event Challenges",
+                            description: "Fixed an issue where the weekly repeatable Kill Spooky Scorched challenge was missing the Star icon."
+                        },
+                        {
+                            category: "Visual,Event,Items",
+                            name: "Public Events",
+                            description: "Updated potential rewards listed for Public Events on their preview information to reflect that they now award Legendary Modules, rather than Legendary Cores."
+                        },
+                        {
+                            category: "Bugfix,NPC,Locations",
+                            name: "Clowns",
+                            description: "Clowns that were spawning near the Foundation Outpost/Eviction Notice have been returned to the circus…honk honk."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine changes",
+                            description: "Astoundingly Awesome Tales 7: +25 max AP, up from +5."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Astoundingly Awesome Tales 10",
+                            description: "+35% more damage with scoped weapons while aiming, previously +15% without needing to aim. Dev Note: This magazine now specifically offers its benefit to weapons fired using manual aim and does not affect VATS."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Backwoodsman 2",
+                            description: "Name and cover art updated to match effect. Dev Note: This is a purely cosmetic change for the magazine’s name and cover. It was previously swapped with Backwoodsman 7 (see below)."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Backwoodsman 6",
+                            description: "Now only affects healing from cooked foods, rather than all effects from cooked food."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Backwoodsman 7",
+                            description: "Name and cover art updated to match effect. Now affects all thrown weapons (Sheepsquatch Shard, Tomahawk, Throwing Knife, Meat Cleaver) instead of just Tomahawks."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Live and Love 1",
+                            description: "+25 max HP while on a team, up from 10."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Live and Love 3",
+                            description: "Now only affects healing from fruits & veggies, rather than all effects from fruits & veggies."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Live and Love 6",
+                            description: "+25 damage resistance while on a team, up from 10."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Grognak the Barbarian 3",
+                            description: "+25 poison resistance, up from 15."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Grognak the Barbarian 8",
+                            description: "+25 cryo resistance (Charisma no-longer required), instead of +2 damage resistance per point of Charisma."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Grognak the Barbarian 9",
+                            description: "+25 carry weight, up from +10."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Grognak the Barbarian 10",
+                            description: "+25 energy resistance, up from +15."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Tesla Science 6",
+                            description: "+75 radiation resistance, up from +15."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Guns and Bullets 6",
+                            description: "+75 damage resistance at night, up from +10 damage resistance at night. Now occurs slightly later at night to match Nocturnal and other night-time effects."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Scout's Life 3",
+                            description: "Now reduces all items' weight by 10%, instead of +10 carry weight."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: Scout's Life 9:",
+                            description: "Now provides +25 fire resistance, instead of -80% camp placement cost."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Magazine: US Covert operations Manual 1",
+                            description: "+50 damage resistance while sneaking, up from +10 while sneaking."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Notes",
+                            description: "Backwoodsman 6 and Live and Love 3 far exceeded the intended level of benefit for magazines and have been adjusted to match their original effect of boosting Healing from food items. Backwoodsman 6’s prior change in the Once in a Blue Moon update had been made in error, and we apologize for the confusion. Prior to this update, these magazines boosted all foods effects, including (but not limited) to Carry Weight, S.P.E.C.I.A.L. stats, VATS Critical Attack damage, etc. The effects of these magazines will be further adjusted if needed in future updates."
+                        },
+                        {
+                            category: "Bugfix,Locations",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue that could cause players to not be able to hire new employees."
+                        },
+                        {
+                            category: "Bugfix,Locations",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue where Stairs were not appearing with the Military theme."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Axel will now properly give players the snowglobe plan when changing themes at Tier 3."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue causing NPCs to give snowglobe plans after the player has already recieved them."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Theodore now gives the snowglobe through the correct dialogue line."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue that would cause Marley to give a Snowglobe plan every time you tried to start a new caravan."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue where Ineke's dialogue would display incorrect text in French and German."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed a mismatch between voice line and subtitles in Axel's dialogue."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed voice lines for Axel in Spanish and French languages."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue where Ineke's upgrade options were not consistently appearing in Marley's dialogue."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Removed duplicate dialogue options from Josie."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue where Axel would sometimes not initiate dialogue when interacted with."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed a mismatch between voice line and subtitles in Axel's dialogue."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue with Ineke's dialogue where the conversation would end unexpectedly after initial introductions."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue where Theodore would not play certain voice lines."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed missing voice lines for Theodore."
+                        },
+                        {
+                            category: "Bugfix,Locations,NPC",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue that would cause the current theme to be eligible for purchase in Axel's dialogue."
+                        },
+                        {
+                            category: "Bugfix,Locations",
+                            name: "Milepost Zero HQ",
+                            description: "A notification will now appear when the brahmin has been upgraded through Josie."
+                        },
+                        {
+                            category: "Bugfix,Locations",
+                            name: "Milepost Zero HQ",
+                            description: "Fixed an issue where some structures within the HQ could be damaged."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Milepost Zero",
+                            description: "Fixed an issue where the player character's head would clip through the British Redcoat Army Hat."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "V63 Laser Carbine",
+                            description: "ixed an issue where Explosive legendary VFX were not working properly."
+                        },
+                        {
+                            category: "Bugfix,Main Quest",
+                            name: "Trade Secrets",
+                            description: "Fixed an issue where some characters were missing the Hornwright Senior Executive Keycard."
+                        },
+                        {
+                            category: "Bugfix,Daily Quest,Visual",
+                            name: "Refuge Daily Quests",
+                            description: "Fixed an issue where the Vault Boy animation would overlap with quest description."
+                        },
+                        {
+                            category: "Main Quest",
+                            name: "Overseer's Mission",
+                            description: "For players who have completed this quest, dropped Overseer's Log holotapes may now be picked up again from their original locations."
+                        },
+                        {
+                            category: "Bugfix,Main Quest",
+                            name: "Custodial Compulsions",
+                            description: "Fixed an issue where other characters would say Saltwater Sam's dialogue lines if the player was on a specific part of the quest."
+                        },
+                        {
+                            category: "Bugfix,Main Quest",
+                            name: "Duty Calls",
+                            description: "Fixed an issue where the brain jars were missing upon relog, blocking progression."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Ticket to Revenge",
+                            description: "Ticket to Revenge has its intended legendary mods again (Furious, Rapid, Lightweight)."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Deathclaw Hand",
+                            description: "Deathclaw Hand is no longer returned when scrapping an item that uses it as a component for crafting."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Deathclaw Gauntlet",
+                            description: "Deathclaw Gauntlet now requires 1 Deathclaw Hand to craft instead of 2."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Unstoppable Monster",
+                            description: "Deathclaw Gauntlet now requires 1 Deathclaw Hand to craft instead of 2."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "The Tenderizer",
+                            description: "Fixed an issue where \"The Tenderizer\" with the standard mod would display as \"The Tenderizer Tenderizer.\""
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Melee weapons",
+                            description: "Fixed an issue where 3-star melee weapons could sometimes spawn with reload speed."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Plan: Headhunter Scythe",
+                            description: "Plan: Headhunter Scythe has been renamed to Plan: Head Hunter Scythe to be consistent with the weapon."
+                        },
+                        {
+                            category: "Bugfix,Items,Perks",
+                            name: "V63-Zweihaender",
+                            description: "V63-Zweihaender now benefits from the \"Science\" Perk card family - \"Science\", \"Science Expert\" and \"Science Master\"."
+                        },
+                        {
+                            category: "Bugfix,Sound",
+                            name: "Minigun",
+                            description: "Enemy minigun audio should no longer continue playing after death."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Lever Action Rifle",
+                            description: "Fixed an issue with the Lever Action Rifle where the Compensator mod did not display correctly with various paints."
+                        },
+                        {
+                            category: "Bugfix,UI",
+                            name: "Typos",
+                            description: "Addressed various typos in the new \"Legendary Crafting\" help menus."
+                        },
+                        {
+                            category: "Bugfix,UI,Atomic Shop",
+                            name: "Atomic Shop",
+                            description: "Fixed an issue where cursor would disappear after making a purchase."
+                        },
+                        {
+                            category: "Bugfix,NPC",
+                            name: "Beckett",
+                            description: "Beckett now appropriately says romantic/flirty dialogue lines to players who have romanced him."
+                        },
+                        {
+                            category: "Balance,Items",
+                            name: "Creatures",
+                            description: "Creatures now have an increased chance to drop meat."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Cultist Dungeon Outfit",
+                            description: "Fixed an issue where mismatched skin textures could appear on characters wearing this outfit."
+                        },
+                        {
+                            category: "Bugfix,Visual,Items",
+                            name: "Spelling",
+                            description: "Fixed a spelling error with the Fireproof mod name."
+                        },
+                        {
+                            category: "Bugfix,Visual,Items",
+                            name: "Colored Mirror Balls",
+                            description: "Fixed an issue where Colored Mirror Balls were not emitting light correctly."
+                        },
+                        {
+                            category: "Bugfix,Expeditions",
+                            name: "Ammo",
+                            description: "Fixed an issue where players were sometimes not receiving contextual ammo drops in expeditions."
+                        },
+                        {
+                            category: "Bugfix,Items,Visual",
+                            name: "Backpack skins",
+                            description: "Fixed an issue where some Backpack Skins would display their name multiple times."
+                        },
+                        {
+                            category: "Bugfix,Combat",
+                            name: "Ogua",
+                            description: "Fixed an issue where the Ogua would still be vulnerable after retreating into it's shell."
+                        },
+                        {
+                            category: "Bugfix,Visual",
+                            name: "Pip-Boy",
+                            description: "Fixed an issue where the pip-boy would not update correctly when switching between weapons with the same name."
+                        },
+                        {
+                            category: "Bugfix,Visual",
+                            name: "Tutorial",
+                            description: "Fixed an issue where the tutorial flyout and help menu displayed the incorrect keybinding for collecting Power Armor chassis."
+                        },
+                        {
+                            category: "Bugfix,UI",
+                            name: "Exit",
+                            description: "Fixed an issue with several Notes where the \"Exit\" command was improperly being displayed on notes that must be collected."
+                        },
+                        {
+                            category: "Bugfix,Visual,Locations",
+                            name: "Burning Mine",
+                            description: "Fixed lighting issues within the Burning Mine location."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Pulowski Preservation Shelter",
+                            description: "Players should no longer become trapped in the doors"
+                        },
+                        {
+                            category: "Bugfix,Locations",
+                            name: "Blue Ridge Bunkhouse",
+                            description: "Removed vendor window from Johnny Bills at the Blue Ridge Bunkhouse."
+                        },
+                        {
+                            category: "Bugfix",
+                            name: "Free Daily Reroller",
+                            description: "Speculative Fix: Free daily re-rollers should now reset at the same time as challenges, instead of an hour later during daylight savings."
+                        },
+                        {
+                            category: "Bugfix,Sound,Locations",
+                            name: "Haunting",
+                            description: "The Shadow Person haunting the cliffs near Lake Eloise has been banished."
+                        },
+                        {
+                            category: "Bugfix,Items",
+                            name: "Thrasher Backpack",
+                            description: "Fixed an issue that could cause the backpack to become static."
                         },
                     ]
                 },
