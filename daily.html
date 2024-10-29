@@ -27026,8 +27026,45 @@
             communityEventsAppend.push(createTripleScore(ofDate(2024, 9, 23, 16), ofDate(2024, 9, 24, 16)));
             communityEventsAppend.push(createDoubleXP(ofDate(2024, 9, 23, 16), ofDate(2024, 9, 28, 16)));
             communityEventsAppend.push(createFalloutDay(ofDate(2024, 9, 23, 16), ofDate(2024, 9, 24, 16)));
+
+            addWeeklies(challengesWeeklyEra21, 56, [
+                scoreFixedGainXP10000Rank100, 1,
+                scoreFixedComplete3PublicEventRank100, 1,
+                scoreCompleteGoldStarN, 3,
+                scoreCompleteDailyOpsPublicTeam, 5,
+                scoreCrippleMirelurkLimb, 30,
+                scoreDrinkNukaCherry, 5,
+                scoreDrinkNukaCola, 25,
+                scoreDrinkTea, 5,
+                scoreEatPumpkin, 15,
+                scoreEatVegetable, 25,
+                scoreKillBloodEagle, 30,
+                scoreScrapJunkCircuitry, 15,
+                scoreCompleteGiveOutCandyDaily, 3,
+                scoreCompleteTrickOrTreatDaily, 3,
+                scoreKillSpookyScorchedRepeat, 50
+            ]);
+            addDaily(challengesDailyEra21, 56, [
+                    scoreCompleteDailyChallenge, 6,
+                    scoreCrippleSuperMutantLeg, 2,
+                    scoreEatCookedMeal, 10,
+                    scoreGainXP2500NoRank, 1,
+                    scoreKillScorched, 10,
+                    scoreKillMirelurk, 5,
+                    scoreModArmor, 5,
+                    scoreScrapJunkScrews, 5,
+                    scoreSpookyCandyBowl, 1,
+                    scoreTrickOrTreat, 5,
+                    scoreKillSpookyScorched, 5,
+                    make1st(scoreDrinkPurifiedWater), 2,
+                    scoreReroll, 1,
+                ], dops(dailyOpsBurning, dailyOpsCommunists, dailyOpsVolatile, true, false, false));
+
             communityEventsAppend.push(createDoubleMutations(ofDate(2024, 9, 31, 16), ofDate(2024, 10, 4, 16)));
             communityEventsAppend.push(createPurveyor(ofDate(2024, 9, 31, 16), ofDate(2024, 10, 4, 16), 25, false, 1));
+
+            communityEventsAppend.push(createF1st(ofDate(2024, 9, 29, 16), ofDate(2024, 10, 5, 16)));
+            
 
             communityEventsAppend.push(createMutationInvasion(ofDate(2024, 10, 5, 16), ofDate(2024, 10, 12, 16)));
             communityEventsAppend.push(createDoubleScore(ofDate(2024, 10, 7, 16), ofDate(2024, 10, 11, 16)));
