@@ -26223,7 +26223,7 @@
                 ]
             };
 
-            fillInSeasonNew(season18, era21Length, "LR18", true, 2);
+            fillInSeasonNew(season18, era21Length, "LR18", true, 10);
             seasonEventsAppend.push(season18);
 
             addWeeklies(challengesWeeklyEra21, 0, [
@@ -27151,7 +27151,7 @@
                 ]
             };
 
-            fillInSeasonNew(season19, era22Length, "LR19", true, 1);
+            fillInSeasonNew(season19, era22Length, "LR19", true, 4);
             seasonEventsAppend.push(season19);
 
             communityEventsAppend.push(createTreasureHunt(ofDate(2024, 11, 5, 16), ofDate(2024, 11, 9, 16)));
@@ -29960,9 +29960,9 @@
                             name: "Total S.C.O.R.E. required for Rank 150: <b>" + thousands(maxscoreNew) + "</b>"
                         });
 
-                        let dblBonus1 = (dblScore * 2500 * 4);
-                        let dblBonus2 = (dblScore * 2750 * 4);
-                        let dblBonus3 = (dblScore * 2750 * 4 * 1.25);
+                        let dblBonus1 = (dblScore * 2500);
+                        let dblBonus2 = (dblScore * 2750);
+                        let dblBonus3 = (dblScore * 2750 * 1.25);
                         let weekly1 = (10500 + 7 * 2500);
                         let weekly2 = (10500 + 7 * 2750);
                         let weekly3 = (10500 + 7 * 2750 * 1.25);
@@ -29986,7 +29986,7 @@
                                     + thousands(weekly1.toFixed(0)) + "</td><td align='right'>" 
                                     + thousands(weekly2.toFixed(0)) + "</td><td align='right'>" 
                                     + thousands(weekly3.toFixed(0)) + "</td></tr>"
-                                + "<tr><td>Double bonus</td><td align='right'>" 
+                                + "<tr><td>Double bonus (" + dblScore + "d)</td><td align='right'>" 
                                     + thousands(dblBonus1.toFixed(0)) + "</td><td align='right'>" 
                                     + thousands(dblBonus2.toFixed(0)) + "</td><td align='right'>" 
                                     + thousands(dblBonus3.toFixed(0)) + "</td></tr>"
@@ -30256,6 +30256,11 @@
                 createPWQuantumWorld(ofDate(2024, 7, 24, 16), ofDate(2024, 8, 24, 16)),
                 //createPWButchersDelight(ofDate(2024, 8, 24, 16), ofDate(2024, 9, 24, 16)),
                 createPWDwellerMustDie(ofDate(2024, 9, 1, 16), ofDate(2024, 10, 1, 16)),
+
+                createPWQuantumWorld(ofDate(2024, 10, 1, 16), ofDate(2024, 11, 1, 17)),
+                createPWButchersDelight(ofDate(2024, 11, 1, 17), ofDate(2025, 0, 1, 17)),
+                createPWHappyBuilder(ofDate(2025, 0, 1, 17), ofDate(2025, 1, 1, 17)),
+                createPWHighRisk(ofDate(2025, 1, 1, 17), ofDate(2025, 2, 1, 17)),
             ];
 
             // --------------------------------------------------------------------------------------------------------------
