@@ -27101,6 +27101,20 @@
                     make1st(scoreEatPlantMeal), 10,
                     scoreReroll, 1,
                 ], dops(dailyOpsCharleston, dailyOpsMutants, dailyOpsChillingMend, false, true, false));
+            addDaily(challengesDailyEra21, 60, [
+                    scoreCompleteDailyChallenge, 6,
+                    scoreCollectAnyNukaCola, 5,
+                    scoreCompleteDailyOpsPublicTeam, 1,
+                    scoreCrippleScorchedArm, 2,
+                    scoreDrinkNukaGrape, 2,
+                    scoreKillRadstag, 5,
+                    scoreVisitBestBuiltCamp, 1,
+                    scoreSpookyCandyBowl, 1,
+                    scoreTrickOrTreat, 5,
+                    scoreKillSpookyScorched, 5,
+                    make1st(scoreCraftScrapMelee), 5,
+                    scoreReroll, 1,
+                ], dops(dailyOpsBurning, dailyOpsCommunists, dailyOpsVaporous, true, true, false));
 
             communityEventsAppend.push(createDoubleMutations(ofDate(2024, 9, 31, 16), ofDate(2024, 10, 4, 16)));
             communityEventsAppend.push(createPurveyor(ofDate(2024, 9, 31, 16), ofDate(2024, 10, 4, 16), 25, false, 1));
@@ -30255,12 +30269,12 @@
                 createPWDwellerMustDie(ofDate(2024, 6, 24, 16), ofDate(2024, 7, 24, 16)),
                 createPWQuantumWorld(ofDate(2024, 7, 24, 16), ofDate(2024, 8, 24, 16)),
                 //createPWButchersDelight(ofDate(2024, 8, 24, 16), ofDate(2024, 9, 24, 16)),
-                createPWDwellerMustDie(ofDate(2024, 9, 1, 16), ofDate(2024, 10, 1, 16)),
+                createPWDwellerMustDie(ofDate(2024, 9, 1, 16), ofDate(2024, 10, 15, 17)),
 
-                createPWQuantumWorld(ofDate(2024, 10, 1, 16), ofDate(2024, 11, 1, 17)),
-                createPWButchersDelight(ofDate(2024, 11, 1, 17), ofDate(2025, 0, 1, 17)),
-                createPWHappyBuilder(ofDate(2025, 0, 1, 17), ofDate(2025, 1, 1, 17)),
-                createPWHighRisk(ofDate(2025, 1, 1, 17), ofDate(2025, 2, 1, 17)),
+                createPWQuantumWorld(ofDate(2024, 10, 15, 16), ofDate(2024, 11, 15, 17)),
+                createPWButchersDelight(ofDate(2024, 11, 15, 17), ofDate(2025, 0, 15, 17)),
+                createPWHappyBuilder(ofDate(2025, 0, 15, 17), ofDate(2025, 1, 15, 17)),
+                createPWHighRisk(ofDate(2025, 1, 15, 17), ofDate(2025, 2, 15, 17)),
             ];
 
             // --------------------------------------------------------------------------------------------------------------
