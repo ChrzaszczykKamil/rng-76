@@ -9,7 +9,7 @@
             td {
                 padding: 2px;
             }
-            
+
             table.infoTable {
                border: 1px solid black;
                border-collapse: collapse;
@@ -22,7 +22,7 @@
                 font-family: monospace;
             }
             .highlightvalue {
-                border: 1px dotted green; 
+                border: 1px dotted green;
                 font-weight:bold;
             }
         </style>
@@ -52,6 +52,7 @@
                             <option value='P56'>Update 56: 3rd December, 2024</option>
                             <option value='P58'>Update 58: 18th March, 2025</option>
                             <option value='P59'>Update 59: 7th April, 2025</option>
+                            <option value='P60'>Update 60: 3rd June, 2025</option>
                         </select>
                     </td>
                     <td>
@@ -294,7 +295,7 @@
             function applyTextFilter(interest) {
                 // filter out entries
                 var searchText = document.getElementById("filterdiff").value;
-                
+
                 if (searchText !== "") {
                     var oldInterest = interest;
                     interest = [];
@@ -580,14 +581,14 @@
 
                         if (entry.type === "added") {
                             cll.innerText = "+";
-                            cll.style.backgroundColor = "#80FF80"; 
+                            cll.style.backgroundColor = "#80FF80";
                         }
                         else if (entry.type === "modified") {
                             cll.innerHTML = "&#x270E;";
-                            cll.style.backgroundColor = "#FFFF80"; 
+                            cll.style.backgroundColor = "#FFFF80";
                         } else {
                             cll.innerText = "-";
-                            cll.style.backgroundColor = "#FF8080"; 
+                            cll.style.backgroundColor = "#FF8080";
                         }
 
                         cll = rw.insertCell(rw.cells.length);
@@ -642,14 +643,14 @@
 
                         if (entry.type === "added") {
                             cll.innerText = "+";
-                            cll.style.backgroundColor = "#80FF80"; 
+                            cll.style.backgroundColor = "#80FF80";
                         }
                         else if (entry.type === "modified") {
                             cll.innerHTML = "&#x270E;";
-                            cll.style.backgroundColor = "#FFFF80"; 
+                            cll.style.backgroundColor = "#FFFF80";
                         } else {
                             cll.innerText = "-";
-                            cll.style.backgroundColor = "#FF8080"; 
+                            cll.style.backgroundColor = "#FF8080";
                         }
 
                         cll = rw.insertCell(rw.cells.length);
@@ -753,14 +754,14 @@
 
                         if (entry.type === "added") {
                             cll.innerText = "+";
-                            cll.style.backgroundColor = "#80FF80"; 
+                            cll.style.backgroundColor = "#80FF80";
                         }
                         else if (entry.type === "modified") {
                             cll.innerHTML = "&#x270E;";
-                            cll.style.backgroundColor = "#FFFF80"; 
+                            cll.style.backgroundColor = "#FFFF80";
                         } else {
                             cll.innerText = "-";
-                            cll.style.backgroundColor = "#FF8080"; 
+                            cll.style.backgroundColor = "#FF8080";
                         }
 
                         cll = rw.insertCell(rw.cells.length);
@@ -833,7 +834,7 @@
                                     cll = rw.insertCell(rw.cells.length);
                                     cll.style.textAlign = "center";
                                     cll.innerText = "+";
-                                    cll.style.backgroundColor = "#C0FFC0"; 
+                                    cll.style.backgroundColor = "#C0FFC0";
 
                                     cll = rw.insertCell(rw.cells.length);
                                     cll.innerHTML = "X = " + x + ", Y = " + rightY;
@@ -847,10 +848,10 @@
                                     cll = rw.insertCell(rw.cells.length);
                                     cll.style.textAlign = "center";
                                     cll.innerText = "-";
-                                    cll.style.backgroundColor = "#FFC0C0"; 
+                                    cll.style.backgroundColor = "#FFC0C0";
 
                                     cll = rw.insertCell(rw.cells.length);
-                                } 
+                                }
                                 else if (leftY != rightY) {
                                     var rw = tbl.insertRow(tbl.rows.length);
                                     cll = rw.insertCell(rw.cells.length);
@@ -860,7 +861,7 @@
                                     cll = rw.insertCell(rw.cells.length);
                                     cll.style.textAlign = "center";
                                     cll.innerHTML = "&#x270E;";
-                                    cll.style.backgroundColor = "#FFFFC0"; 
+                                    cll.style.backgroundColor = "#FFFFC0";
 
                                     cll = rw.insertCell(rw.cells.length);
                                     cll.innerHTML = "X = " + x + ", Y = <span class='highlightvalue'>&nbsp;" + rightY + "&nbsp;</span>";
@@ -903,7 +904,7 @@
 
             function diffAsLeveledLists() {
                 var result = computeDiff((leftEntry, leftInfo, rightEntry, rightInfo) => {
-                    var result = 
+                    var result =
                         leftEntry.LVLF === rightEntry.LVLF
                         && leftEntry.LVMV === rightEntry.LVMV
                         && leftEntry.LVMG === rightEntry.LVMG
@@ -964,14 +965,14 @@
 
                         if (entry.type === "added") {
                             cll.innerText = "+";
-                            cll.style.backgroundColor = "#80FF80"; 
+                            cll.style.backgroundColor = "#80FF80";
                         }
                         else if (entry.type === "modified") {
                             cll.innerHTML = "&#x270E;";
-                            cll.style.backgroundColor = "#FFFF80"; 
+                            cll.style.backgroundColor = "#FFFF80";
                         } else {
                             cll.innerText = "-";
-                            cll.style.backgroundColor = "#FF8080"; 
+                            cll.style.backgroundColor = "#FF8080";
                         }
 
                         cll = rw.insertCell(rw.cells.length);
@@ -1013,7 +1014,7 @@
                                     // same entry
                                     // different count
                                     if (leftObj.count !== rightObj.count) {
-                                        tryAppendDiff(tbl, "* ", 
+                                        tryAppendDiff(tbl, "* ",
                                             formatEdid(leftObj.id, leftObj.info, versionleft) + " (x " + leftObj.count + ")",
                                             formatEdid(rightObj.id, rightObj.info, versionright) + " (x " + rightObj.count + ")",
                                             true
@@ -1069,7 +1070,7 @@
                     cll.style.paddingRight = "30px";
                     if (left !== undefined) {
                         if (noStyle) {
-                            cll.innerHTML = "<i>" + title + left + "</i>"; 
+                            cll.innerHTML = "<i>" + title + left + "</i>";
                         } else {
                             cll.innerHTML = "<i>" + title + "<span class='highlightvalue'>&nbsp;" + left + "&nbsp;</span></i>";
                         }
@@ -1080,14 +1081,14 @@
 
                     if (left === undefined && right !== undefined) {
                         cll.innerText = "+";
-                        cll.style.backgroundColor = "#80FF80"; 
+                        cll.style.backgroundColor = "#80FF80";
                     }
                     else if (left !== undefined && right !== undefined) {
                         cll.innerHTML = "&#x270E;";
-                        cll.style.backgroundColor = "#FFFF80"; 
+                        cll.style.backgroundColor = "#FFFF80";
                     } else {
                         cll.innerText = "-";
-                        cll.style.backgroundColor = "#FF8080"; 
+                        cll.style.backgroundColor = "#FF8080";
                     }
 
                     cll = rw.insertCell(rw.cells.length);
