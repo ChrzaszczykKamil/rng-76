@@ -1,5 +1,5 @@
 # rng-76
-Rng 76 - Hunt for the TSE
+Rng 76 - 
 
 ## General tools
 
@@ -27,3 +27,8 @@ Rng 76 - Hunt for the TSE
 
 [Experience calculator](https://chrzaszczykkamil.github.io/rng-76/xp.html)
 
+
+# Authors
+Created by akarnokd, updated by Chraczil.
+
+[Original repo](https://github.com/akarnokd/rng-76)
