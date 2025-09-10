@@ -38,13 +38,6 @@
                     <td>
                         Patch (left):&nbsp;
                         <select id='versionleft'>
-                            <option value='P45'>Update 45: 18th July, 2023</option>
-                            <option value='P46'>Update 46: 22nd August, 2023</option>
-                            <option value='P47'>Update 47: 10th October, 2023</option>
-                            <option value='P48'>Update 48: 5th December, 2023</option>
-                            <option value='P49'>Update 49: 30th January, 2024</option>
-                            <option value='P50'>Update 50: 26th March, 2024</option>
-                            <option value='P51'>Update 51: 30th April, 2024</option>
                             <option value='P52'>Update 52: 12th June, 2024</option>
                             <option value='P53'>Update 53: 23rd July, 2024</option>
                             <option value='P54'>Update 54: 3rd September, 2024</option>
@@ -54,6 +47,7 @@
                             <option value='P59'>Update 59: 7th April, 2025</option>
                             <option value='P60'>Update 60: 3rd June, 2025</option>
                             <option value='P61'>Update 61: 22nd July, 2025</option>
+                            <option value='P61'>Update 62: 2nd September, 2025</option>
                         </select>
                     </td>
                     <td>
@@ -689,6 +683,36 @@
                 return entries;
             }
 
+            function printThisEntry(id, info, entries) {
+                if (entries.length != 0) {
+                    var first = entries[0];
+                    var result = [];
+                    if (first.x === undefined) {
+                        var idx = 0;
+                        for (var e of entries) {
+                            result.push({ x: idx, y: e });
+                            idx++;
+                        }
+                    } else {
+                        var map = new Map();
+                        for (var e of entries) {
+                            map.set(e.x, e.y);
+                        }
+                        for (var e of map.entries()) {
+                            result.push({ x: e[0], y: e[1]});
+                        }
+                    }
+                    console.log("formId:" + id + " edid:" + info.editorId +  " map: ");
+                    var txt = "";
+                    for (var e of result) {
+                        txt += "(X = " + e.x + ", Y = " + e.y + "),";
+                    }
+                    console.log(txt);
+                    return result;
+                }
+                return entries;
+            }
+
             function diffAsCurves() {
                 var result = computeDiff((leftEntry, leftInfo, rightEntry, rightInfo) => {
                     leftEntry = dedupAndFix(leftEntry);
@@ -769,6 +793,7 @@
                         cll.style.borderTop = "1px solid #808080";
                         if (entry.rightInfo !== undefined || entry.type !== "removed") {
                             cll.innerHTML = formatEdid(entry.id, entry.rightInfo, versionright);
+                            printThisEntry(entry.id, entry.rightInfo, entry.rightValue);
 
                             if (entry.type === "added") {
                                 let dotdotdot = document.createElement("span");
